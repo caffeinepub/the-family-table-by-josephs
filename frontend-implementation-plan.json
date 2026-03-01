@@ -1,0 +1,253 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "The Family Table By Josephs – Full Premium Multi-Page Restaurant Website",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create multi-page React frontend with 5 pages (Home, About, Menu, Gallery, Contact) using client-side routing, apply globally consistent warm cozy premium theme with specified color palette and typography, ensure full responsiveness",
+      "acceptanceCriteria": [
+        "All 5 pages (Home, About, Menu, Gallery, Contact) are accessible via navigation links",
+        "Brand colors (#FFF6E9, #6B4F4F, #D17A5B, #6A8D73) are consistently applied",
+        "Handwritten-style heading font and modern sans-serif body font are used site-wide",
+        "Layout is fully responsive and looks correct on mobile, tablet, and desktop"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Set up React Router with routes for Home, About, Menu, Gallery, and Contact pages. Import and configure all page components with proper routing structure."
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "create",
+          "description": "Create Home page component structure (content will be added in REQ-3)."
+        },
+        {
+          "path": "frontend/src/pages/About.tsx",
+          "operation": "create",
+          "description": "Create About page component structure (content will be added in REQ-4)."
+        },
+        {
+          "path": "frontend/src/pages/Menu.tsx",
+          "operation": "create",
+          "description": "Create Menu page component structure (content will be added in REQ-5)."
+        },
+        {
+          "path": "frontend/src/pages/Gallery.tsx",
+          "operation": "create",
+          "description": "Create Gallery page component structure (content will be added in REQ-6)."
+        },
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "create",
+          "description": "Create Contact page component structure (content will be added in REQ-7)."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add global CSS custom properties for the color palette: --warm-cream (#FFF6E9), --soft-brown (#6B4F4F), --terracotta (#D17A5B), --olive-green (#6A8D73). Import Google Fonts (Playfair Display or Cormorant Garamond for headings, Lato or Inter for body). Apply global font families, smooth scroll behavior, soft shadows utilities, and background texture styles. Set body background to warm cream."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with custom colors (warmCream, softBrown, terracotta, oliveGreen), custom font families (heading and body), border radius utilities for soft rounded UI elements, and responsive breakpoints for mobile-first design."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement sticky top navigation bar with restaurant name/logo, navigation links, mobile hamburger menu, and scroll shadow effect",
+      "acceptanceCriteria": [
+        "Navbar sticks to the top on scroll",
+        "All 5 page links are present and functional",
+        "On mobile, hamburger menu toggles the navigation links",
+        "Navbar shows a soft shadow after scrolling down"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "create",
+          "description": "Create sticky navigation bar component with 'The Family Table By Josephs' branding text on the left and navigation links (Home, About, Menu, Gallery, Contact) on the right using React Router Link components. Implement mobile hamburger menu with toggle state. Add scroll listener to apply shadow effect when scrolled. Use warm cream background and terracotta for active/hover states."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Navbar component above the router outlet so it appears on all pages."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Build Home page with 6 sections: Hero with generated banner image and CTAs, Signature Dishes with 4 featured items, Why Families Love Us features, Customer Stories testimonials, Instagram Preview grid, and Reservation CTA banner, all with fade-in animations",
+      "acceptanceCriteria": [
+        "Hero section displays banner image with correct headline, subheadline, and two CTAs",
+        "'Explore Menu' CTA navigates to Menu page",
+        "'Book a Table' CTA navigates to reservation form",
+        "All 6 home sections are present and rendered in order",
+        "Sections fade in as user scrolls down",
+        "Instagram tiles link to the correct Instagram URL"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Build complete Home page with 6 sections: (1) Hero section using the generated hero banner image from frontend/public/assets/generated/hero-banner.dim_1440x700.png, headline 'Where Every Meal Feels Like Home', subheadline 'A Cozy Place For Family & Friends', 'Explore Menu' button (links to /menu), and 'Book a Table' button (scrolls to reservation form or links to booking section). (2) Signature Dishes section with 4 featured items using food card placeholder images (frontend/public/assets/generated/food-starters.dim_600x600.png, food-pizza.dim_600x600.png, food-eggs.dim_600x600.png, food-burger.dim_600x600.png), names, and short descriptions. (3) 'Why Families Love Us' section with 3-4 icon+text feature cards (fresh ingredients, family atmosphere, cozy ambiance, memorable moments). (4) Customer Stories section with 2-3 testimonial quote cards with warm styling. (5) Instagram Preview section with 6 placeholder tiles linking to https://www.instagram.com/thefamilytablebandra. (6) Reservation CTA banner prompting to book a table. Implement scroll-triggered fade-in animation for each section using Intersection Observer or CSS animations."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build About page with restaurant story, family dining concept, tagline, fresh ingredients philosophy, ambiance description, and interior image",
+      "acceptanceCriteria": [
+        "About page contains restaurant story, family concept, ingredients philosophy, and ambiance sections",
+        "Tagline 'Creating Memories With Your Family' is prominently displayed",
+        "Image section renders the about/interior visual"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/About.tsx",
+          "operation": "modify",
+          "description": "Build About page with warm card-style layout containing: headline about The Family Table By Josephs story, paragraph about family-focused dining concept with prominent tagline 'Creating Memories With Your Family', section about fresh ingredients philosophy, description of cozy ambiance, and decorative image section using the generated about/interior image from frontend/public/assets/generated/about-interior.dim_1200x800.png. Apply soft shadows and warm cream/terracotta color scheme."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Build Menu page with all 24 real menu categories and items, category filter bar, vegetarian badges, WhatsApp order buttons, hover animations, and responsive grid layout, fetching data from backend",
+      "acceptanceCriteria": [
+        "All 24 menu categories are present with correct items, names, descriptions, and prices",
+        "Category filter bar allows jumping to each section",
+        "Vegetarian items display a green vegetarian badge",
+        "Each card shows a placeholder image, name, description, price, and WhatsApp order button",
+        "Cards have hover scale animation",
+        "Grid is responsive: 3 cols desktop, 2 tablet, 1 mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Menu.tsx",
+          "operation": "modify",
+          "description": "Build Menu page that fetches menu data from backend using the getMenuCategories() method. Display all categories in exact order: Roti Rolls, Starters, Fried, Eggs, Non Veg Pizza, Veg Pizza, Sandwiches, Burgers, Non Veg Snacks, Hot Dogs, Veg Snacks, Tea, Drinks (Beverages), Mojito, Coffee, Milkshakes, Mango Beverages, Salad, Meals, Stuffed Poee, Bacon and Ham Quiche, Grilled Chicken Quiche, Shepherds Pie, Corn Spinach Quiche. Implement horizontal scrollable/sticky category filter bar at the top for jumping to sections. Each menu item card displays: placeholder food image, item name, description, price in ₹, green vegetarian badge (leaf icon) for vegetarian items, and 'Order via WhatsApp' button linking to https://wa.me/919167340197. Use rounded card design with hover scale animation and Instagram-style responsive grid (3 columns desktop, 2 tablet, 1 mobile)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Build Gallery page with masonry grid layout of 12 generated placeholder images and lightbox overlay with navigation and animations",
+      "acceptanceCriteria": [
+        "Gallery page renders all placeholder images in a masonry grid",
+        "Clicking any image opens a lightbox overlay",
+        "Lightbox has close, previous, and next navigation",
+        "Lightbox open/close uses smooth fade or zoom animation"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Gallery.tsx",
+          "operation": "modify",
+          "description": "Build Gallery page with masonry-style grid layout displaying all 12 generated placeholder gallery images from frontend/public/assets/generated/: gallery-family.dim_800x600.png, gallery-quiche.dim_800x600.png, gallery-ambiance.dim_800x600.png, gallery-flatlay.dim_800x600.png, gallery-poee.dim_800x600.png, gallery-drinks.dim_800x600.png, food-starters.dim_600x600.png, food-pizza.dim_600x600.png, food-chai.dim_600x600.png, food-mojito.dim_600x600.png, food-coffee.dim_600x600.png, food-salad.dim_600x600.png. Implement lightbox overlay: clicking any image opens fullscreen preview with smooth fade/zoom animation, close button, and left/right navigation arrows to cycle through images. Use warm color scheme for overlay controls."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Build Contact page with full address, Google Maps embed, call/WhatsApp/Instagram links, and opening hours using warm card layout",
+      "acceptanceCriteria": [
+        "Full address is displayed correctly",
+        "Google Maps iframe renders the correct Bandra West location",
+        "Call button links to tel:+919167340197",
+        "WhatsApp button links to https://wa.me/919167340197",
+        "Instagram link opens https://www.instagram.com/thefamilytablebandra",
+        "Opening hours section is present"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "modify",
+          "description": "Build Contact page with warm card layout displaying: full address '3R6J+J44 Epitome, 29th Rd, Bandra West, Mumbai, Maharashtra 400050', Google Maps public iframe embed using plus code location 3R6J+J44 Bandra West, Mumbai (no API key), 'Call Us' button linking to tel:+919167340197, 'WhatsApp Us' button linking to https://wa.me/919167340197, Instagram link to https://www.instagram.com/thefamilytablebandra, and opening hours section with placeholder hours (Mon–Sun 8:00 AM – 10:00 PM). Style with terracotta accent buttons and soft brown text on warm cream cards."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Implement WhatsApp Table Reservation form with validation and redirect, accessible from Home page and as standalone section",
+      "acceptanceCriteria": [
+        "Form has all 6 fields: Full Name, Phone, Date, Time, Guests, Special Requests",
+        "Submitting with missing required fields shows inline validation errors",
+        "On valid submit, browser is redirected to the correct wa.me URL with all fields pre-filled in the message",
+        "A brief animated success confirmation is shown before redirect",
+        "Form is styled with the warm terracotta/cream palette and rounded inputs"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ReservationForm.tsx",
+          "operation": "create",
+          "description": "Create WhatsApp Table Reservation form component with fields: Full Name (text, required), Phone Number (tel, required), Date (date picker, required), Time (time picker, required), Number of Guests (number, required, min 1), Special Requests (textarea, optional). Implement real-time validation for required fields with inline error messages. On valid submission, show brief animated success/confirmation message, then redirect browser to https://wa.me/919167340197?text=New%20Table%20Booking%20%E2%80%93%20The%20Family%20Table%20By%20Josephs%0AName%3A%20{name}%0APhone%3A%20{phone}%0ADate%3A%20{date}%0ATime%3A%20{time}%0AGuests%3A%20{guests}%0ASpecial%20Request%3A%20{specialRequest} with all fields URL-encoded. Style with terracotta accent buttons, rounded inputs, and warm cream background."
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Import ReservationForm component and add it as a section on the Home page. Wire the Hero 'Book a Table' CTA to scroll to this form section."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add floating WhatsApp button fixed to bottom-right corner on every page with pulse animation and tooltip",
+      "acceptanceCriteria": [
+        "WhatsApp floating button is visible on all pages at bottom-right",
+        "Clicking opens https://wa.me/919167340197",
+        "Button has a pulse animation",
+        "Tooltip appears on hover"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FloatingWhatsApp.tsx",
+          "operation": "create",
+          "description": "Create floating WhatsApp button component fixed to bottom-right corner. Link to https://wa.me/919167340197, display WhatsApp icon, use terracotta or green background, implement subtle pulse animation, and show tooltip 'Chat with us on WhatsApp' on hover. Ensure button is accessible and mobile-friendly."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render FloatingWhatsApp component so it appears globally on all pages."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Implement elegant footer on all pages with restaurant info, navigation links, contact details, social icons, and copyright",
+      "acceptanceCriteria": [
+        "Footer appears on all 5 pages",
+        "Footer contains restaurant name, tagline, nav links, address, WhatsApp, Instagram, and copyright",
+        "Social icons are present and link correctly"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create elegant footer component with warm cream/soft brown color scheme and olive green accent links. Include: restaurant name 'The Family Table By Josephs' and tagline 'Creating Memories With Your Family', navigation links (Home, About, Menu, Gallery, Contact) using React Router, full address '3R6J+J44 Epitome, 29th Rd, Bandra West, Mumbai, Maharashtra 400050', WhatsApp link (+919167340197), Instagram link (https://www.instagram.com/thefamilytablebandra), social icons, and copyright line. Ensure fully responsive layout."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Footer component after the router outlet so it appears on all pages."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Add SEO meta tags including page title, meta description, and Open Graph tags for social sharing",
+      "acceptanceCriteria": [
+        "Page title is set to 'The Family Table By Josephs – Bandra West, Mumbai'",
+        "Meta description tag is present with the specified content",
+        "Open Graph tags for og:title, og:description, og:image are present"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update page title to 'The Family Table By Josephs – Bandra West, Mumbai'. Add meta description tag with content 'A cozy premium family restaurant in Bandra West, Mumbai. Creating Memories With Your Family. View our full menu, book a table, and visit us today.' Add Open Graph meta tags for og:title, og:description, and og:image (referencing the hero banner image from frontend/public/assets/generated/hero-banner.dim_1440x700.png)."
+        }
+      ]
+    }
+  ]
+}

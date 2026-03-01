@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Brand palette in OKLCH */
+    --warm-cream: oklch(0.975 0.022 80);
+    --soft-brown: oklch(0.42 0.055 30);
+    --terracotta: oklch(0.62 0.12 38);
+    --olive-green: oklch(0.55 0.07 145);
+    --warm-cream-dark: oklch(0.94 0.03 75);
+    --terracotta-dark: oklch(0.52 0.10 38);
+    --olive-green-light: oklch(0.72 0.07 145);
+
+    /* Shadcn tokens mapped to brand */
+    --background: 0.975 0.022 80;
+    --foreground: 0.42 0.055 30;
+    --card: 0.99 0.012 80;
+    --card-foreground: 0.42 0.055 30;
+    --popover: 0.99 0.012 80;
+    --popover-foreground: 0.42 0.055 30;
+    --primary: 0.62 0.12 38;
+    --primary-foreground: 0.975 0.022 80;
+    --secondary: 0.94 0.03 75;
+    --secondary-foreground: 0.42 0.055 30;
+    --muted: 0.94 0.03 75;
+    --muted-foreground: 0.55 0.04 30;
+    --accent: 0.55 0.07 145;
+    --accent-foreground: 0.975 0.022 80;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.03 75;
+    --input: 0.88 0.03 75;
+    --ring: 0.62 0.12 38;
+    --chart-1: 0.62 0.12 38;
+    --chart-2: 0.55 0.07 145;
+    --chart-3: 0.42 0.055 30;
+    --chart-4: 0.72 0.07 145;
+    --chart-5: 0.52 0.10 38;
+    --sidebar: 0.975 0.022 80;
+    --sidebar-foreground: 0.42 0.055 30;
+    --sidebar-primary: 0.62 0.12 38;
+    --sidebar-primary-foreground: 0.975 0.022 80;
+    --sidebar-accent: 0.94 0.03 75;
+    --sidebar-accent-foreground: 0.42 0.055 30;
+    --sidebar-border: 0.88 0.03 75;
+    --sidebar-ring: 0.62 0.12 38;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--warm-cream);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .font-body {
+    font-family: 'Lato', sans-serif;
+  }
+
+  /* Subtle paper texture overlay */
+  .texture-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 40px oklch(0.42 0.055 30 / 0.15);
+  }
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 oklch(0.55 0.07 145 / 0.5); }
+  70% { box-shadow: 0 0 0 14px oklch(0.55 0.07 145 / 0); }
+  100% { box-shadow: 0 0 0 0 oklch(0.55 0.07 145 / 0); }
+}
+
+.pulse-animation {
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.lightbox-enter {
+  animation: fadeInScale 0.3s ease forwards;
+}
+
+@keyframes successBounce {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.success-bounce {
+  animation: successBounce 0.5s ease forwards;
+}

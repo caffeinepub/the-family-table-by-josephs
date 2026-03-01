@@ -1,0 +1,225 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-multi-page-react-frontend-with-5-pages-home-about-menu-gallery-and-contact-implement-client-side-routing-between-all-pages-apply-a-globally-consistent-warm-cozy-premium-theme-using-color-palette-warm-cream-fff6e9-as-background-soft-brown-6b4f4f-for-text-terracotta-d17a5b-for-primary-accents-and-ctas-and-olive-green-6a8d73-for-secondary-accents-use-an-elegant-handwritten-style-google-font-e-g-playfair-display-or-cormorant-garamond-for-all-headings-and-a-clean-modern-sans-serif-e-g-lato-or-inter-for-body-text-apply-soft-rounded-ui-elements-subtle-background-textures-soft-shadows-and-smooth-scroll-behavior-throughout-all-pages-must-be-fully-responsive-and-mobile-first",
+      "featureTitle": "Create a multi-page React frontend with 5 pages: Home, About, Menu, Gallery, and Contact. Implement client-side routing between all pages. Apply a globally consistent warm cozy premium theme using color palette: Warm Cream (#FFF6E9) as background, Soft Brown (#6B4F4F) for text, Terracotta (#D17A5B) for primary accents and CTAs, and Olive Green (#6A8D73) for secondary accents. Use an elegant handwritten-style Google Font (e.g. Playfair Display or Cormorant Garamond) for all headings and a clean modern sans-serif (e.g. Lato or Inter) for body text. Apply soft rounded UI elements, subtle background textures, soft shadows, and smooth scroll behavior throughout. All pages must be fully responsive and mobile-first.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/About.tsx",
+        "frontend/src/pages/Contact.tsx",
+        "frontend/src/pages/Gallery.tsx",
+        "frontend/src/pages/Home.tsx",
+        "frontend/src/pages/Menu.tsx",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-sticky-top-navigation-bar-with-the-restaurant-name-the-family-table-by-josephs-as-the-logo-brand-text-on-the-left-and-navigation-links-home-about-menu-gallery-contact-on-the-right-on-mobile-collapse-to-a-hamburger-menu-apply-a-warm-cream-background-with-subtle-shadow-on-scroll",
+      "featureTitle": "Implement a sticky top navigation bar with the restaurant name 'The Family Table By Josephs' as the logo/brand text on the left, and navigation links (Home, About, Menu, Gallery, Contact) on the right. On mobile, collapse to a hamburger menu. Apply a warm cream background with subtle shadow on scroll.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navbar.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-home-page-with-the-following-sections-in-order-1-hero-section-with-the-generated-hero-banner-image-headline-where-every-meal-feels-like-home-subheadline-a-cozy-place-for-family-friends-and-two-cta-buttons-explore-menu-navigates-to-menu-page-and-book-a-table-scrolls-to-or-navigates-to-the-reservation-form-2-signature-dishes-section-highlighting-4-featured-items-with-food-card-images-names-and-short-descriptions-3-why-families-love-us-section-with-3-4-icon-text-feature-highlights-e-g-fresh-ingredients-family-atmosphere-cozy-ambiance-memorable-moments-4-customer-stories-section-with-2-3-warm-testimonial-quote-cards-5-instagram-preview-section-with-a-grid-of-6-placeholder-tiles-linking-to-https-www-instagram-com-thefamilytablebandra-6-reservation-cta-banner-section-prompting-visitors-to-book-a-table-apply-fade-in-on-scroll-animation-to-each-section",
+      "featureTitle": "Build the Home page with the following sections in order: (1) Hero section with the generated hero banner image, headline 'Where Every Meal Feels Like Home', subheadline 'A Cozy Place For Family & Friends', and two CTA buttons: 'Explore Menu' (navigates to Menu page) and 'Book a Table' (scrolls to or navigates to the reservation form). (2) Signature Dishes section highlighting 4 featured items with food card images, names, and short descriptions. (3) 'Why Families Love Us' section with 3–4 icon+text feature highlights (e.g. fresh ingredients, family atmosphere, cozy ambiance, memorable moments). (4) Customer Stories section with 2–3 warm testimonial quote cards. (5) Instagram Preview section with a grid of 6 placeholder tiles linking to https://www.instagram.com/thefamilytablebandra. (6) Reservation CTA banner section prompting visitors to book a table. Apply fade-in on scroll animation to each section.",
+      "files": [
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-about-page-with-a-headline-about-the-story-behind-the-family-table-by-josephs-a-paragraph-about-the-family-focused-dining-concept-and-memory-making-mission-with-tagline-creating-memories-with-your-family-a-section-about-fresh-ingredients-philosophy-a-description-of-the-cozy-ambiance-and-a-decorative-image-section-using-the-generated-about-interior-image-use-warm-card-style-layout-with-soft-shadows",
+      "featureTitle": "Build the About page with: a headline about the story behind The Family Table By Josephs, a paragraph about the family-focused dining concept and memory-making mission with tagline 'Creating Memories With Your Family', a section about fresh ingredients philosophy, a description of the cozy ambiance, and a decorative image section using the generated about/interior image. Use warm card-style layout with soft shadows.",
+      "files": [
+        "frontend/src/pages/About.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-menu-page-displaying-all-real-menu-items-grouped-by-the-following-categories-in-this-exact-order-roti-rolls-starters-fried-eggs-non-veg-pizza-veg-pizza-sandwiches-burgers-non-veg-snacks-hot-dogs-veg-snacks-tea-drinks-beverages-mojito-coffee-milkshakes-mango-beverages-salad-meals-stuffed-poee-bacon-and-ham-quiche-grilled-chicken-quiche-shepherds-pie-corn-spinach-quiche-implement-a-horizontal-scrollable-or-sticky-category-tab-pill-filter-bar-at-the-top-so-users-can-jump-directly-to-any-category-each-menu-item-card-must-display-a-placeholder-food-image-item-name-short-description-where-provided-price-in-a-vegetarian-badge-green-leaf-icon-for-items-marked-vegetarian-and-an-order-via-whatsapp-button-that-opens-https-wa-me-919167340197-use-rounded-card-design-with-hover-scale-animation-and-instagram-style-grid-layout-3-columns-on-desktop-2-on-tablet-1-on-mobile-populate-all-items-exactly-as-provided-with-their-real-prices-and-descriptions",
+      "featureTitle": "Build the Menu page displaying all real menu items grouped by the following categories in this exact order: Roti Rolls, Starters, Fried, Eggs, Non Veg Pizza, Veg Pizza, Sandwiches, Burgers, Non Veg Snacks, Hot Dogs, Veg Snacks, Tea, Drinks (Beverages), Mojito, Coffee, Milkshakes, Mango Beverages, Salad, Meals, Stuffed Poee, Bacon and Ham Quiche, Grilled Chicken Quiche, Shepherds Pie, Corn Spinach Quiche. Implement a horizontal scrollable or sticky category tab/pill filter bar at the top so users can jump directly to any category. Each menu item card must display: a placeholder food image, item name, short description (where provided), price in ₹, a vegetarian badge (green leaf icon) for items marked Vegetarian, and an 'Order via WhatsApp' button that opens https://wa.me/919167340197. Use rounded card design with hover scale animation and Instagram-style grid layout (3 columns on desktop, 2 on tablet, 1 on mobile). Populate all items exactly as provided with their real prices and descriptions.",
+      "files": [
+        "frontend/src/pages/Menu.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-gallery-page-with-a-masonry-style-grid-layout-displaying-all-12-generated-placeholder-gallery-images-food-ambiance-interior-customer-moments-categories-implement-a-lightbox-overlay-clicking-any-image-opens-a-fullscreen-preview-with-smooth-fade-zoom-animation-a-close-button-and-left-right-navigation-arrows-to-cycle-through-images",
+      "featureTitle": "Build the Gallery page with a masonry-style grid layout displaying all 12 generated placeholder gallery images (food, ambiance, interior, customer moments categories). Implement a lightbox overlay: clicking any image opens a fullscreen preview with smooth fade/zoom animation, a close button, and left/right navigation arrows to cycle through images.",
+      "files": [
+        "frontend/src/pages/Gallery.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-contact-page-displaying-full-address-3r6j-j44-epitome-29th-rd-bandra-west-mumbai-maharashtra-400050-a-google-maps-public-iframe-embed-using-the-provided-plus-code-location-3r6j-j44-bandra-west-mumbai-a-call-us-button-linking-to-tel-919167340197-a-whatsapp-us-button-linking-to-https-wa-me-919167340197-an-instagram-link-to-https-www-instagram-com-thefamilytablebandra-and-an-opening-hours-section-with-placeholder-hours-e-g-mon-sun-8-00-am-10-00-pm-style-with-warm-card-layout-consistent-with-the-site-theme",
+      "featureTitle": "Build the Contact page displaying: full address '3R6J+J44 Epitome, 29th Rd, Bandra West, Mumbai, Maharashtra 400050', a Google Maps public iframe embed using the provided plus code location (3R6J+J44 Bandra West, Mumbai), a 'Call Us' button linking to tel:+919167340197, a 'WhatsApp Us' button linking to https://wa.me/919167340197, an Instagram link to https://www.instagram.com/thefamilytablebandra, and an opening hours section with placeholder hours (e.g. Mon–Sun 8:00 AM – 10:00 PM). Style with warm card layout consistent with the site theme.",
+      "files": [
+        "frontend/src/pages/Contact.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-whatsapp-table-reservation-form-accessible-from-the-home-page-book-a-table-cta-and-as-a-standalone-section-page-the-form-must-include-fields-full-name-text-required-phone-number-tel-required-date-date-picker-required-time-time-picker-required-number-of-guests-number-required-min-1-special-requests-textarea-optional-on-valid-submission-redirect-the-browser-to-https-wa-me-919167340197-text-new-20table-20booking-20-e2-80-93-20the-20family-20table-20by-20josephs-0aname-3a-20-name-0aphone-3a-20-phone-0adate-3a-20-date-0atime-3a-20-time-0aguests-3a-20-guests-0aspecial-20request-3a-20-specialrequest-with-all-fields-url-encoded-show-real-time-validation-errors-for-required-fields-display-a-friendly-animated-success-confirmation-message-briefly-before-redirecting-style-the-form-with-terracotta-accent-buttons-and-rounded-warm-card-design",
+      "featureTitle": "Implement a WhatsApp Table Reservation form accessible from the Home page 'Book a Table' CTA and as a standalone section/page. The form must include fields: Full Name (text, required), Phone Number (tel, required), Date (date picker, required), Time (time picker, required), Number of Guests (number, required, min 1), Special Requests (textarea, optional). On valid submission, redirect the browser to: https://wa.me/919167340197?text=New%20Table%20Booking%20%E2%80%93%20The%20Family%20Table%20By%20Josephs%0AName%3A%20{name}%0APhone%3A%20{phone}%0ADate%3A%20{date}%0ATime%3A%20{time}%0AGuests%3A%20{guests}%0ASpecial%20Request%3A%20{specialRequest} with all fields URL-encoded. Show real-time validation errors for required fields. Display a friendly animated success/confirmation message briefly before redirecting. Style the form with terracotta accent buttons and rounded warm card design.",
+      "files": [
+        "frontend/src/components/ReservationForm.tsx",
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-floating-whatsapp-button-fixed-to-the-bottom-right-corner-of-every-page-the-button-must-link-to-https-wa-me-919167340197-display-the-whatsapp-icon-use-a-terracotta-or-green-background-include-a-subtle-pulse-animation-and-have-a-tooltip-label-chat-with-us-on-whatsapp-on-hover",
+      "featureTitle": "Add a floating WhatsApp button fixed to the bottom-right corner of every page. The button must link to https://wa.me/919167340197, display the WhatsApp icon, use a terracotta or green background, include a subtle pulse animation, and have a tooltip label 'Chat with us on WhatsApp' on hover.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FloatingWhatsApp.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-an-elegant-footer-present-on-all-pages-include-restaurant-name-and-tagline-creating-memories-with-your-family-navigation-links-home-about-menu-gallery-contact-address-3r6j-j44-epitome-29th-rd-bandra-west-mumbai-maharashtra-400050-whatsapp-link-919167340197-instagram-link-https-www-instagram-com-thefamilytablebandra-social-icons-and-a-copyright-line-use-warm-cream-soft-brown-color-scheme-with-olive-green-accent-links",
+      "featureTitle": "Implement an elegant footer present on all pages. Include: restaurant name and tagline 'Creating Memories With Your Family', navigation links (Home, About, Menu, Gallery, Contact), address '3R6J+J44 Epitome, 29th Rd, Bandra West, Mumbai, Maharashtra 400050', WhatsApp link (+919167340197), Instagram link (https://www.instagram.com/thefamilytablebandra), social icons, and a copyright line. Use warm cream/soft brown color scheme with olive green accent links.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-seo-meta-tags-to-the-react-app-set-the-page-title-to-the-family-table-by-josephs-bandra-west-mumbai-add-meta-description-a-cozy-premium-family-restaurant-in-bandra-west-mumbai-creating-memories-with-your-family-view-our-full-menu-book-a-table-and-visit-us-today-and-add-open-graph-tags-for-title-description-and-image-using-the-hero-banner-asset",
+      "featureTitle": "Add SEO meta tags to the React app: set the page title to 'The Family Table By Josephs – Bandra West, Mumbai', add meta description 'A cozy premium family restaurant in Bandra West, Mumbai. Creating Memories With Your Family. View our full menu, book a table, and visit us today.', and add Open Graph tags for title, description, and image (using the hero banner asset).",
+      "files": [
+        "frontend/index.html"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

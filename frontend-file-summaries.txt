@@ -1,0 +1,17 @@
+{
+  "frontend/index.html": "HTML entry point with SEO meta tags, Open Graph tags, page title set to \"The Family Table By Josephs – Bandra West, Mumbai\", and Google Fonts import for Cormorant Garamond and Lato.",
+  "frontend/src/index.css": "Global styles with OKLCH color system mapped to the brand palette (warm cream, soft brown, terracotta, olive green), custom font utilities, fade-in animation, card hover effects, pulse animation for WhatsApp button, and lightbox/success animations.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with brand color tokens (cream, brown, terracotta, olive), custom font families (Cormorant Garamond heading, Lato body), warm shadow utilities, and rounded border radius variants.",
+  "frontend/src/hooks/useQueries.ts": "React Query hook for fetching menu categories from the backend canister using the getMenuCategories() method.",
+  "frontend/src/App.tsx": "Main app component with TanStack Router setup for 5 pages (Home, About, Menu, Gallery, Contact), root layout with Navbar, Footer, and FloatingWhatsApp rendered on all pages.",
+  "frontend/src/components/Navbar.tsx": "Sticky top navigation bar with restaurant branding, desktop nav links with active state highlighting, mobile hamburger menu toggle, and scroll shadow effect.",
+  "frontend/src/components/Footer.tsx": "Elegant footer with restaurant name/tagline, navigation links, address, WhatsApp/Instagram social icons, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/FloatingWhatsApp.tsx": "Fixed bottom-right floating WhatsApp button with pulse animation, hover tooltip, and link to wa.me/919167340197.",
+  "frontend/src/components/ReservationForm.tsx": "WhatsApp table reservation form with 6 fields, real-time validation, animated success state, and redirect to pre-filled WhatsApp message on submission.",
+  "frontend/src/lib/useFadeIn.ts": "Custom hook using IntersectionObserver to trigger CSS fade-in-up animations when elements enter the viewport.",
+  "frontend/src/pages/Home.tsx": "Full Home page with 6 sections: hero banner with CTAs, signature dishes grid, \"Why Families Love Us\" features, customer testimonials, Instagram preview grid, reservation CTA banner, and embedded ReservationForm.",
+  "frontend/src/pages/About.tsx": "About page with hero overlay, restaurant story section with interior image, philosophy/values grid (4 cards), and visit CTA section.",
+  "frontend/src/pages/Menu.tsx": "Complete Menu page with all 24 categories and exact menu items/prices from user data, sticky category filter pills, search functionality, vegetarian badges, and WhatsApp order buttons on each card.",
+  "frontend/src/pages/Gallery.tsx": "Gallery page with masonry-style 3-column grid (2-column mobile), lightbox overlay with keyboard navigation, zoom-in hover effects, and smooth fade animations.",
+  "frontend/src/pages/Contact.tsx": "Contact page with address card, opening hours, call/WhatsApp/Instagram contact buttons, Google Maps public iframe embed, and WhatsApp booking CTA."
+}

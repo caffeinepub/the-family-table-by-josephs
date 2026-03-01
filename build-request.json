@@ -1,0 +1,315 @@
+{
+  "kind": "build_request",
+  "title": "The Family Table By Josephs – Full Premium Multi-Page Restaurant Website",
+  "projectName": "The Family Table",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a multi-page React frontend with 5 pages: Home, About, Menu, Gallery, and Contact. Implement client-side routing between all pages. Apply a globally consistent warm cozy premium theme using color palette: Warm Cream (#FFF6E9) as background, Soft Brown (#6B4F4F) for text, Terracotta (#D17A5B) for primary accents and CTAs, and Olive Green (#6A8D73) for secondary accents. Use an elegant handwritten-style Google Font (e.g. Playfair Display or Cormorant Garamond) for all headings and a clean modern sans-serif (e.g. Lato or Inter) for body text. Apply soft rounded UI elements, subtle background textures, soft shadows, and smooth scroll behavior throughout. All pages must be fully responsive and mobile-first.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Theme: Cozy modern café + premium family dining",
+          "Color Palette: Warm Cream (#FFF6E9), Soft Brown (#6B4F4F), Terracotta (#D17A5B), Olive Green accents (#6A8D73)",
+          "Elegant handwritten-style font for headings",
+          "fully responsive (mobile-first)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 5 pages (Home, About, Menu, Gallery, Contact) are accessible via navigation links",
+        "Brand colors (#FFF6E9, #6B4F4F, #D17A5B, #6A8D73) are consistently applied",
+        "Handwritten-style heading font and modern sans-serif body font are used site-wide",
+        "Layout is fully responsive and looks correct on mobile, tablet, and desktop"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a sticky top navigation bar with the restaurant name 'The Family Table By Josephs' as the logo/brand text on the left, and navigation links (Home, About, Menu, Gallery, Contact) on the right. On mobile, collapse to a hamburger menu. Apply a warm cream background with subtle shadow on scroll.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Sticky navbar"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navbar sticks to the top on scroll",
+        "All 5 page links are present and functional",
+        "On mobile, hamburger menu toggles the navigation links",
+        "Navbar shows a soft shadow after scrolling down"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build the Home page with the following sections in order: (1) Hero section with the generated hero banner image, headline 'Where Every Meal Feels Like Home', subheadline 'A Cozy Place For Family & Friends', and two CTA buttons: 'Explore Menu' (navigates to Menu page) and 'Book a Table' (scrolls to or navigates to the reservation form). (2) Signature Dishes section highlighting 4 featured items with food card images, names, and short descriptions. (3) 'Why Families Love Us' section with 3–4 icon+text feature highlights (e.g. fresh ingredients, family atmosphere, cozy ambiance, memorable moments). (4) Customer Stories section with 2–3 warm testimonial quote cards. (5) Instagram Preview section with a grid of 6 placeholder tiles linking to https://www.instagram.com/thefamilytablebandra. (6) Reservation CTA banner section prompting visitors to book a table. Apply fade-in on scroll animation to each section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Hero Section",
+          "Headline: 'Where Every Meal Feels Like Home'",
+          "Subheadline: 'A Cozy Place For Family & Friends'",
+          "Signature Dishes",
+          "'Why Families Love Us' section",
+          "Customer Stories section",
+          "Instagram Preview Section",
+          "Reservation CTA section",
+          "Soft fade-in animation on scroll"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays banner image with correct headline, subheadline, and two CTAs",
+        "'Explore Menu' CTA navigates to Menu page",
+        "'Book a Table' CTA navigates to reservation form",
+        "All 6 home sections are present and rendered in order",
+        "Sections fade in as user scrolls down",
+        "Instagram tiles link to the correct Instagram URL"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build the About page with: a headline about the story behind The Family Table By Josephs, a paragraph about the family-focused dining concept and memory-making mission with tagline 'Creating Memories With Your Family', a section about fresh ingredients philosophy, a description of the cozy ambiance, and a decorative image section using the generated about/interior image. Use warm card-style layout with soft shadows.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Story behind The Family Table",
+          "Family-focused dining concept",
+          "Fresh ingredients philosophy",
+          "Cozy ambiance description",
+          "Tagline: 'Creating Memories With Your Family'"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About page contains restaurant story, family concept, ingredients philosophy, and ambiance sections",
+        "Tagline 'Creating Memories With Your Family' is prominently displayed",
+        "Image section renders the about/interior visual"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Build the Menu page displaying all real menu items grouped by the following categories in this exact order: Roti Rolls, Starters, Fried, Eggs, Non Veg Pizza, Veg Pizza, Sandwiches, Burgers, Non Veg Snacks, Hot Dogs, Veg Snacks, Tea, Drinks (Beverages), Mojito, Coffee, Milkshakes, Mango Beverages, Salad, Meals, Stuffed Poee, Bacon and Ham Quiche, Grilled Chicken Quiche, Shepherds Pie, Corn Spinach Quiche. Implement a horizontal scrollable or sticky category tab/pill filter bar at the top so users can jump directly to any category. Each menu item card must display: a placeholder food image, item name, short description (where provided), price in ₹, a vegetarian badge (green leaf icon) for items marked Vegetarian, and an 'Order via WhatsApp' button that opens https://wa.me/919167340197. Use rounded card design with hover scale animation and Instagram-style grid layout (3 columns on desktop, 2 on tablet, 1 on mobile). Populate all items exactly as provided with their real prices and descriptions.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-1"
+        ],
+        "quotes": [
+          "Use the full real menu",
+          "Modern rounded card design",
+          "Hover scale animation",
+          "Clean and Instagram-style grid layout",
+          "Each item must include: Image, Name, Short description, Price placeholder, 'Order / Book Table' button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 24 menu categories are present with correct items, names, descriptions, and prices",
+        "Category filter bar allows jumping to each section",
+        "Vegetarian items display a green vegetarian badge",
+        "Each card shows a placeholder image, name, description, price, and WhatsApp order button",
+        "Cards have hover scale animation",
+        "Grid is responsive: 3 cols desktop, 2 tablet, 1 mobile"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build the Gallery page with a masonry-style grid layout displaying all 12 generated placeholder gallery images (food, ambiance, interior, customer moments categories). Implement a lightbox overlay: clicking any image opens a fullscreen preview with smooth fade/zoom animation, a close button, and left/right navigation arrows to cycle through images.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-1"
+        ],
+        "quotes": [
+          "Use placeholder images for gallery",
+          "Masonry grid",
+          "Lightbox preview with smooth animation"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Gallery page renders all placeholder images in a masonry grid",
+        "Clicking any image opens a lightbox overlay",
+        "Lightbox has close, previous, and next navigation",
+        "Lightbox open/close uses smooth fade or zoom animation"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Build the Contact page displaying: full address '3R6J+J44 Epitome, 29th Rd, Bandra West, Mumbai, Maharashtra 400050', a Google Maps public iframe embed using the provided plus code location (3R6J+J44 Bandra West, Mumbai), a 'Call Us' button linking to tel:+919167340197, a 'WhatsApp Us' button linking to https://wa.me/919167340197, an Instagram link to https://www.instagram.com/thefamilytablebandra, and an opening hours section with placeholder hours (e.g. Mon–Sun 8:00 AM – 10:00 PM). Style with warm card layout consistent with the site theme.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1",
+          "msg-2"
+        ],
+        "quotes": [
+          "Full address",
+          "Google Maps embed",
+          "Click to Call button",
+          "WhatsApp button",
+          "Instagram link",
+          "Opening hours",
+          "Use the location i already provided to you",
+          "3R6J+J44 Epitome, 29th Rd, Bandra West, Mumbai, Maharashtra 400050"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Full address is displayed correctly",
+        "Google Maps iframe renders the correct Bandra West location",
+        "Call button links to tel:+919167340197",
+        "WhatsApp button links to https://wa.me/919167340197",
+        "Instagram link opens https://www.instagram.com/thefamilytablebandra",
+        "Opening hours section is present"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Implement a WhatsApp Table Reservation form accessible from the Home page 'Book a Table' CTA and as a standalone section/page. The form must include fields: Full Name (text, required), Phone Number (tel, required), Date (date picker, required), Time (time picker, required), Number of Guests (number, required, min 1), Special Requests (textarea, optional). On valid submission, redirect the browser to: https://wa.me/919167340197?text=New%20Table%20Booking%20%E2%80%93%20The%20Family%20Table%20By%20Josephs%0AName%3A%20{name}%0APhone%3A%20{phone}%0ADate%3A%20{date}%0ATime%3A%20{time}%0AGuests%3A%20{guests}%0ASpecial%20Request%3A%20{specialRequest} with all fields URL-encoded. Show real-time validation errors for required fields. Display a friendly animated success/confirmation message briefly before redirecting. Style the form with terracotta accent buttons and rounded warm card design.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "WhatsApp Booking System",
+          "https://wa.me/919167340197?text=",
+          "New Table Booking – The Family Table By Josephs",
+          "Form validation required",
+          "Show friendly success confirmation animation"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form has all 6 fields: Full Name, Phone, Date, Time, Guests, Special Requests",
+        "Submitting with missing required fields shows inline validation errors",
+        "On valid submit, browser is redirected to the correct wa.me URL with all fields pre-filled in the message",
+        "A brief animated success confirmation is shown before redirect",
+        "Form is styled with the warm terracotta/cream palette and rounded inputs"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add a floating WhatsApp button fixed to the bottom-right corner of every page. The button must link to https://wa.me/919167340197, display the WhatsApp icon, use a terracotta or green background, include a subtle pulse animation, and have a tooltip label 'Chat with us on WhatsApp' on hover.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Floating WhatsApp button bottom right"
+        ]
+      },
+      "acceptanceCriteria": [
+        "WhatsApp floating button is visible on all pages at bottom-right",
+        "Clicking opens https://wa.me/919167340197",
+        "Button has a pulse animation",
+        "Tooltip appears on hover"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Implement an elegant footer present on all pages. Include: restaurant name and tagline 'Creating Memories With Your Family', navigation links (Home, About, Menu, Gallery, Contact), address '3R6J+J44 Epitome, 29th Rd, Bandra West, Mumbai, Maharashtra 400050', WhatsApp link (+919167340197), Instagram link (https://www.instagram.com/thefamilytablebandra), social icons, and a copyright line. Use warm cream/soft brown color scheme with olive green accent links.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Elegant footer design",
+          "Social icons"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer appears on all 5 pages",
+        "Footer contains restaurant name, tagline, nav links, address, WhatsApp, Instagram, and copyright",
+        "Social icons are present and link correctly"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Store the complete restaurant menu data (all categories and items with names, descriptions, prices, and vegetarian flags) in the Motoko backend as stable structured data. Expose a query endpoint to retrieve all menu categories and items so the frontend Menu page fetches real data from the canister.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-1"
+        ],
+        "quotes": [
+          "Menu",
+          "Each item must include: Name, Short description, Price"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores all 24 categories and their items with correct names, descriptions, prices, and vegetarian flags",
+        "A query function returns all menu data",
+        "Frontend Menu page successfully fetches and renders data from the backend"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Add SEO meta tags to the React app: set the page title to 'The Family Table By Josephs – Bandra West, Mumbai', add meta description 'A cozy premium family restaurant in Bandra West, Mumbai. Creating Memories With Your Family. View our full menu, book a table, and visit us today.', and add Open Graph tags for title, description, and image (using the hero banner asset).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "SEO optimized meta tags"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page title is set to 'The Family Table By Josephs – Bandra West, Mumbai'",
+        "Meta description tag is present with the specified content",
+        "Open Graph tags for og:title, og:description, og:image are present"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do NOT use blue or purple anywhere in the design; stick strictly to the specified palette: #FFF6E9, #6B4F4F, #D17A5B, #6A8D73",
+    "WhatsApp number must be exactly +919167340197 in all links and forms",
+    "Google Maps embed must use the public iframe approach with the provided plus code location (no API key)",
+    "All menu item names, descriptions, and prices must match exactly as provided by the user — do not alter or fabricate any menu data",
+    "Do not edit any files under frontend/src/hooks/ or frontend/src/components/ui"
+  ],
+  "nonGoals": [
+    "Real-time order management or online ordering system",
+    "User accounts or authentication",
+    "Payment processing",
+    "CMS or admin panel for menu editing",
+    "Real Instagram API feed integration",
+    "Email or SMS notifications",
+    "Alcoholic beverage ordering features"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Warm cozy restaurant hero banner with softly lit food spread on a rustic wooden table, warm cream and terracotta tones, bokeh background, inviting atmosphere (hero-banner.dim_1440x700.png)",
+      "Cozy restaurant interior with warm ambient lighting, wooden tables, family dining setting, soft terracotta and olive green accents (about-interior.dim_1200x800.png)",
+      "Appetizing golden-fried chicken drumsticks on a white plate with green garnish, warm natural lighting (food-starters.dim_600x600.png)",
+      "Wood-fired style pizza with colorful toppings on a rustic board, overhead shot, warm tones (food-pizza.dim_600x600.png)",
+      "Fluffy omelette with cheese and herbs, sunny breakfast plate, bright natural light (food-eggs.dim_600x600.png)",
+      "Juicy gourmet burger with lettuce, cheese, and sauces on parchment paper, warm food photography (food-burger.dim_600x600.png)",
+      "Steaming cup of chai in a ceramic cup with cinnamon and cardamom on a warm wooden surface (food-chai.dim_600x600.png)",
+      "Colorful mojito mocktail in a tall glass with fresh mint and lime, bright vibrant photography (food-mojito.dim_600x600.png)",
+      "Creamy latte art in a white ceramic cup on a marble surface with soft warm lighting (food-coffee.dim_600x600.png)",
+      "Thick mango milkshake in a tall glass with a straw, bright tropical tones (food-milkshake.dim_600x600.png)",
+      "Warm chicken salad bowl with kale, corn, bell peppers, and ricotta on a white plate, fresh and vibrant (food-salad.dim_600x600.png)",
+      "Gallery placeholder: happy family of four laughing at a restaurant table, warm cozy ambiance, candid moment (gallery-family.dim_800x600.png)",
+      "Gallery placeholder: close-up of a freshly baked quiche with golden crust on a wooden board (gallery-quiche.dim_800x600.png)",
+      "Gallery placeholder: cozy restaurant corner with hanging Edison bulbs, wooden chairs, terracotta wall tones (gallery-ambiance.dim_800x600.png)",
+      "Gallery placeholder: overhead flat-lay of multiple dishes on a restaurant table, vibrant and colorful (gallery-flatlay.dim_800x600.png)",
+      "Gallery placeholder: Goan chorizo stuffed poee cut open on a plate with a side of pickle (gallery-poee.dim_800x600.png)",
+      "Gallery placeholder: two friends toasting with colorful mojito glasses in a warmly lit café (gallery-drinks.dim_800x600.png)"
+    ],
+    "edits": []
+  }
+}
